@@ -5,5 +5,8 @@ class profile::base {
   user { 'vagrant':
     ensure   => present,
   }
+  file { '/home/vagrant':
+    ensure => 'directory',
+  }
   include profile::ssh_server
 }
