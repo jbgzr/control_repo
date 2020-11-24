@@ -10,7 +10,7 @@ class profile::ssh_server {
 		ensure => present,
 		user   => 'root',
 		type   => 'ssh-rsa',
-		key    => 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDTeJ2UzDmTd6p0+xIvjISdCA1wqnlEup1ZTeDmwwggdjHAgqUqsJvn1NMThvaJ2NZpHUNuOgc1wkukWQN8JJxQeaQRwlX9OKHXIbBVsnZZpM1GjX2FZFAJS/UcOA2nAKLzFt4xqlbv9b5W+mG5Stv7goC6w3LMSBVaPbQ1Ykwbbfy7aZmAGTw8z7bBXGCxubomXgbbkm7Tn0OzIm7bxMimBz+emLw70NlEVTTshwuYj255CZCjjixMj9Pb1IEhncRKzoZiQtAVWqKKZK9f9oCcASwtAxW8PEuvWCrckO2ZL+IQUJwbagQrKE0Du72ouunOWYLg98pvcnjyZsqOQFy7',
+		key    => 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDNjk5102Cq3ZlQVuUIwkNg/O4HLtNVatxqxhMLljOVkSIsIsmpvONoIaat+xycCE2gqw/Wl3dqgrNsIomGqSpfOT+bIsUcAtPF4x02if2DJeKEOOIJ2DOES+rgWjzjJnHsufPqV4DEK146vHyrpXfCkwwmqpiQeW8nCdR68XETWgJwqs7d4u6gI0FmUBWQKFvF6xXdAWITLHaK2hdTSkVOziM5aopJyzCJS9Kn6w0cksxmazJErHwvJC8c1ooAWpL7jYVgKz9AE+cilX9drtNbk3xwGQTzmWIYYl2pp3lMgVgVfNvcb7XtBrCDq4f54GmY8nIE0vegALiVLe6l6jk5',
 	}  
 	ssh_authorized_key { 'vagrant@master.puppet.vm':
 		ensure => present,
